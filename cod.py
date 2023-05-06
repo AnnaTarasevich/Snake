@@ -138,7 +138,7 @@ root = Tk()
 root.title("PythonicWay Snake")
 
 
-c = Canvas(root, width=WIDTH, height=HEIGHT, bg="#C18FAD")
+c = Canvas(root, width=WIDTH, height=HEIGHT, bg="#e0abcb")
 c.grid()
 # catch keypressing
 c.focus_set()
