@@ -138,7 +138,11 @@ root = Tk()
 # Устанавливаем название окна
 root.title("Snake IS-24")
 
+<<<<<<< HEAD
 # создаем экземпляр класса Canvas и заливаем все розовым цветом
+=======
+
+>>>>>>> origin/main
 c = Canvas(root, width=WIDTH, height=HEIGHT, bg="#e0abcb")
 c.grid()
 # Наводим фокус на Canvas, чтобы мы могли ловить нажатия клавиш
