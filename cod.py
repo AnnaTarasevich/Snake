@@ -82,10 +82,13 @@ class Snake(object):
                  x2+self.vector[0]*SEG_SIZE, y2+self.vector[1]*SEG_SIZE)
 
     def add_segment(self):
-        """ Изменяет направление движения змейки """
+        """ Создает сегмент змейки """
+        # определяем последний сегмент
         last_seg = c.coords(self.segments[0].instance)
+        # определяем координаты куда поставить следующий сегмент
         x = last_seg[2] - SEG_SIZE
         y = last_seg[3] - SEG_SIZE
+        # добавляем змейке еще один сегмент в заданных координатах
         self.segments.insert(0, Segment(x, y))
 
     def change_direction(self, event):
